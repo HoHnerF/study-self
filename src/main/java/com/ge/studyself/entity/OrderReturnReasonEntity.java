@@ -6,9 +6,6 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author gwj
- */
 @ToString
 @Data
 public class OrderReturnReasonEntity implements Serializable {

@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+
 @Configuration
 public class MyRabbitConfig {
 
@@ -41,7 +42,7 @@ public class MyRabbitConfig {
      * 3、消费端确认(保证每个消息都被正确消费，此时才可以broker删除这个消息)
      *
      */
-    // @PostConstruct  //MyRabbitConfig对象创建完成以后，执行这个方法
+//     @PostConstruct  //MyRabbitConfig对象创建完成以后，执行这个方法
     public void initRabbitTemplate() {
 
         /**
